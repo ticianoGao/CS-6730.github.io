@@ -134,6 +134,20 @@ a {
   margin-top: 2rem;
 }
 
+.hero-meta {
+  margin-top: 1.4rem;
+}
+
+.hero-team {
+  margin: 0;
+  font-size: 1rem;
+  color: var(--muted);
+}
+
+.hero-team strong {
+  color: var(--text);
+}
+
 .btn {
   display: inline-flex;
   align-items: center;
