@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<style>
+html, body {
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  overflow: hidden;
+}
+
+.tableauPlaceholder {
+  width: 100% !important;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.tableauViz {
+  width: 100% !important;
+  max-width: 100%;
+}
+</style>
+</head>
+
+<body>
+
+<div class="tableauPlaceholder" id="vizMentalStrain" style="position: relative">
+  <object class="tableauViz" style="display:none;">
+    <param name="host_url" value="https://public.tableau.com/" />
+    <param name="embed_code_version" value="3" />
+    <param name="name" value="DVPProj/Sheet4" />
+    <param name="tabs" value="no" />
+    <param name="toolbar" value="no" />
+  </object>
+</div>
+
+<script>
+var divElement = document.getElementById("vizMentalStrain");
+var vizElement = divElement.getElementsByTagName("object")[0];
+
+vizElement.style.width = "100%";
+vizElement.style.height = "600px";
+
+var scriptElement = document.createElement("script");
+scriptElement.src = "https://public.tableau.com/javascripts/api/viz_v1.js";
+vizElement.parentNode.insertBefore(scriptElement, vizElement);
+</script>
+
+</body>
+</html>
