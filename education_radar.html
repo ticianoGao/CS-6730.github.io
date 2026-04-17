@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Education Level Risk Radar Chart</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    body {
+      margin: 0;
+      padding: 24px;
+      font-family: Arial, sans-serif;
+      background: #ffffff;
+    }
+
+    .chart-container {
+      width: 100%;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 16px;
+    }
+
+    canvas {
+      width: 100% !important;
+      height: 700px !important;
+    }
+  </style>
+</head>
+<body>
+  <div class="chart-container">
+    <h2>Risk Profile by Education Level</h2>
+    <canvas id="radarChart"></canvas>
+  </div>
+
+  <script>
+    const ctx = document.getElementById("radarChart");
+
+    new Chart(ctx, {
+      type: "radar",
+      data: {
+        labels: [
+          "Device Hours",
+          "Notifications",
+          "Sleep Risk",
+          "Focus Risk",
+          "Stress Level"
+        ],
+        datasets: [
+          {
+            label: "High School",
+            data: [0.011956193, 0.413345318, 0.176110202, 0.31139924, 0.132672649],
+            borderWidth: 2,
+            fill: true
+          },
+          {
+            label: "Bachelor",
+            data: [0, 0.214144795, 0, 0.265513824, 1],
+            borderWidth: 2,
+            fill: true
+          },
+          {
+            label: "Master",
+            data: [0.164567921, 0, 0.482936544, 0, 0.219863201],
+            borderWidth: 2,
+            fill: true
+          },
+          {
+            label: "PhD",
+            data: [1, 1, 1, 1, 0],
+            borderWidth: 2,
+            fill: true
+          }
+        ]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        elements: {
+          line: {
+            tension: 0.1
+          }
+        },
+        plugins: {
+          legend: {
+            position: "top"
+          },
+          tooltip: {
+            enabled: true
+          }
+        },
+        scales: {
+          r: {
+            min: 0,
+            max: 1,
+            ticks: {
+              stepSize: 0.2
+            },
+            pointLabels: {
+              font: {
+                size: 14
+              }
+            }
+          }
+        }
+      }
+    });
+  </script>
+</body>
+</html>
