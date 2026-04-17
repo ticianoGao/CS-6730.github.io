@@ -20,7 +20,6 @@
         <div class="nav-links">
           <a href="#overview">Overview</a>
           <a href="#findings">Findings</a>
-          <a href="#dashboard">Dashboard</a>
         </div>
       </div>
     </nav>
@@ -53,15 +52,28 @@
         <div class="section-text">
           <h2>What is this project about?</h2>
           <p>
-            Digital devices have become a necessity in daily life, shaping how people spend time and access information. Smartphones enable people to access information quickly and comfortably. However, excessive reliance on these devices negatively affects our mental and physical health. Existing literature presents connections between varying aspects of health and smartphone and social media usage. Furthermore, these relationships tend to vary across different age groups (Vettriselvan et al., 2025). Our project draws mainly from the Digital Lifestyle Benchmark Dataset from Kaggle.
-           </p>
-            <br />
-           <p>
-            This dataset includes health condition variables (e.g., depression score, anxiety score) and digital device usage proxies (e.g., social media minutes, digital dependence score) of 3,500 individuals.
-           </p>
-            <br />
-           <p>
-            We are interested in exploring the relationship between digital device usage and mental wellbeing. Our objective is to draw insights from the data and determine how we might adjust our own screen time to support better wellbeing and overall health.
+            Digital devices have become a necessity in daily life, shaping how
+            people spend time and access information. Smartphones enable people
+            to access information quickly and comfortably. However, excessive
+            reliance on these devices negatively affects our mental and physical
+            health. Existing literature presents connections between varying
+            aspects of health and smartphone and social media usage.
+            Furthermore, these relationships tend to vary across different age
+            groups (Vettriselvan et al., 2025). Our project draws mainly from
+            the Digital Lifestyle Benchmark Dataset from Kaggle.
+          </p>
+          <br />
+          <p>
+            This dataset includes health condition variables (e.g., depression
+            score, anxiety score) and digital device usage proxies (e.g., social
+            media minutes, digital dependence score) of 3,500 individuals.
+          </p>
+          <br />
+          <p>
+            We are interested in exploring the relationship between digital
+            device usage and mental wellbeing. Our objective is to draw insights
+            from the data and determine how we might adjust our own screen time
+            to support better wellbeing and overall health.
           </p>
         </div>
       </section>
@@ -70,7 +82,8 @@
         <div class="section-text">
           <h2>Dataset at a glance</h2>
           <p>
-            This section presents an overview of the dataset, focusing on sleep quality and age distributions.
+            This section presents an overview of the dataset, focusing on sleep
+            quality and age distributions.
           </p>
         </div>
 
@@ -145,7 +158,12 @@
           </p>
           <br />
           <p>
-          An interesting insight is that the 50–54 age group appears counterintuitive. Despite relatively high screen time, they show lower engagement with social media. At the same time, they report the lowest happiness scores and the highest levels of depression and anxiety. However, this finding should be interpreted with caution, as this age group represents only 1% of the data. 
+            An interesting insight is that the 50–54 age group appears
+            counterintuitive. Despite relatively high screen time, they show
+            lower engagement with social media. At the same time, they report
+            the lowest happiness scores and the highest levels of depression and
+            anxiety. However, this finding should be interpreted with caution,
+            as this age group represents only 1% of the data.
           </p>
         </div>
 
@@ -161,8 +179,6 @@
         </div>
       </section>
 
-
-      
       <section class="section reveal" id="findings">
         <div class="section-text">
           <p class="section-label">Main Finding</p>
@@ -185,7 +201,6 @@
         </div>
       </section>
 
-
       <section class="section reveal">
         <div class="section-text">
           <p class="section-label">Focus</p>
@@ -207,56 +222,6 @@
           </iframe>
         </div>
       </section>
-
-      <section class="section reveal" id="dashboard">
-        <div class="section-text">
-          <p class="section-label">Interactive Dashboard</p>
-          <h2>Explore the full dashboard</h2>
-          <p>
-            Use the full Tableau dashboard to interact with the project data and
-            explore more detailed views.
-          </p>
-        </div>
-
-        <div class="card card-large dashboard-card">
-          <div
-            class="tableauPlaceholder"
-            id="viz1775265685778"
-            style="position: relative"
-          >
-            <noscript>
-              <a href="#">
-                <img
-                  alt="Sheet 1"
-                  src="https://public.tableau.com/static/images/Da/Data_test_0403/Sheet1/1_rss.png"
-                  style="border: none"
-                />
-              </a>
-            </noscript>
-            <object class="tableauViz" style="display: none">
-              <param
-                name="host_url"
-                value="https%3A%2F%2Fpublic.tableau.com%2F"
-              />
-              <param name="embed_code_version" value="3" />
-              <param name="site_root" value="" />
-              <param name="name" value="Data_test_0403/Sheet1" />
-              <param name="tabs" value="no" />
-              <param name="toolbar" value="yes" />
-              <param
-                name="static_image"
-                value="https://public.tableau.com/static/images/Da/Data_test_0403/Sheet1/1.png"
-              />
-              <param name="animate_transition" value="yes" />
-              <param name="display_static_image" value="yes" />
-              <param name="display_spinner" value="yes" />
-              <param name="display_overlay" value="yes" />
-              <param name="display_count" value="yes" />
-              <param name="language" value="en-US" />
-            </object>
-          </div>
-        </div>
-      </section>
     </main>
 
     <footer class="footer">
@@ -264,15 +229,6 @@
     </footer>
 
     <script>
-      const divElement = document.getElementById("viz1775265685778");
-      const vizElement = divElement.getElementsByTagName("object")[0];
-      vizElement.style.width = "100%";
-      vizElement.style.height = "780px";
-      const scriptElement = document.createElement("script");
-      scriptElement.src =
-        "https://public.tableau.com/javascripts/api/viz_v1.js";
-      vizElement.parentNode.insertBefore(scriptElement, vizElement);
-
       const observer = new IntersectionObserver(
         (entries) => {
           entries.forEach((entry) => {
