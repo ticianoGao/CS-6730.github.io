@@ -332,3 +332,7 @@ a {
     min-height: 620px;
   }
 }
+
+.section {
+  scroll-margin-top: 80px;
+}
