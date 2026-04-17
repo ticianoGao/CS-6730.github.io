@@ -266,6 +266,12 @@ a {
   height: 750px;
 }
 
+.frame-radar {
+  height: 300px;
+  width: 100%;
+  border: none;
+}
+
 .dashboard-card .tableauPlaceholder {
   width: 100%;
   min-height: 780px;
